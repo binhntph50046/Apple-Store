@@ -1,0 +1,53 @@
+User-agent: *
+
+# Allow crawling of public pages
+Allow: /
+Allow: /shop
+Allow: /product/
+Allow: /blog
+Allow: /about
+Allow: /contact
+Allow: /faq
+Allow: /location
+Allow: /sitemap.xml
+
+# Disallow crawling of private/admin areas
+Disallow: /admin/
+Disallow: /login
+Disallow: /register
+Disallow: /password/
+Disallow: /cart
+Disallow: /checkout
+Disallow: /profile/
+Disallow: /order/
+Disallow: /wishlist
+Disallow: /compare
+Disallow: /search
+Disallow: /api/
+Disallow: /uploads/
+Disallow: /storage/
+Disallow: /vendor/
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /yarn.lock
+Disallow: /.git/
+Disallow: /.gitignore
+Disallow: /README.md
+Disallow: /artisan
+Disallow: /bootstrap/
+Disallow: /config/
+Disallow: /database/
+Disallow: /resources/
+Disallow: /routes/
+Disallow: /tests/
+Disallow: /app/
+Disallow: /public/uploads/avatar/
+Disallow: /public/uploads/users/
+Disallow: /public/uploads/returns/
+
+# Sitemap location
+Sitemap: https://your-domain.com/sitemap.xml

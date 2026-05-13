@@ -1,0 +1,229 @@
+.modern-footer {
+    background: linear-gradient(to right, #1a1c2b, #16181f) !important;
+    color: #ffffff !important;
+    padding: 60px 0 20px !important;
+    position: relative !important;
+}
+
+.modern-footer .footer-heading {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    margin-bottom: 15px !important;
+    position: relative !important;
+    padding-bottom: 8px !important;
+}
+
+.modern-footer .footer-heading::after {
+    content: '' !important;
+    position: absolute !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 25px !important;
+    height: 2px !important;
+    background: #60a5fa !important;
+}
+
+.modern-footer .footer-links {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.modern-footer .footer-links li {
+    margin-bottom: 10px !important;
+}
+
+.modern-footer .footer-links a {
+    color: rgba(255, 255, 255, 0.7) !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    font-size: 13px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+.modern-footer .footer-links a i {
+    color: #60a5fa !important;
+    font-size: 14px !important;
+    width: 16px !important;
+    text-align: center !important;
+}
+
+.modern-footer .footer-links a:hover {
+    color: #ffffff !important;
+    transform: translateX(5px) !important;
+}
+
+.modern-footer .footer-links a:hover i {
+    color: #ffffff !important;
+}
+
+.modern-footer .contact-info {
+    margin-top: 20px !important;
+}
+
+.modern-footer .contact-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-bottom: 12px !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 13px !important;
+}
+
+.modern-footer .contact-item i {
+    color: #60a5fa !important;
+    font-size: 14px !important;
+    width: 16px !important;
+    text-align: center !important;
+}
+
+.modern-footer .footer-subscribe {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 20px !important;
+    border-radius: 12px !important;
+}
+
+.modern-footer .footer-subscribe h3 {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    margin-bottom: 10px !important;
+}
+
+.modern-footer .subscribe-form {
+    display: flex !important;
+    gap: 8px !important;
+    margin-bottom: 20px !important;
+}
+
+.modern-footer .subscribe-form input {
+    flex: 1 !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 8px 15px !important;
+    border-radius: 8px !important;
+    color: #ffffff !important;
+    font-size: 13px !important;
+}
+
+.modern-footer .subscribe-form input::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.modern-footer .subscribe-form button {
+    background: #60a5fa !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 8px 15px !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+.modern-footer .subscribe-form button:hover {
+    background: #3b82f6 !important;
+}
+
+.modern-footer .social-icons {
+    display: flex !important;
+    gap: 10px !important;
+    margin-bottom: 20px !important;
+}
+
+.modern-footer .social-icons a {
+    width: 35px !important;
+    height: 35px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 8px !important;
+    color: #ffffff !important;
+    transition: all 0.3s ease !important;
+}
+
+.modern-footer .social-icons a:nth-child(1) { background: #4267B2 !important; }
+.modern-footer .social-icons a:nth-child(2) { background: #0377cd !important; }
+.modern-footer .social-icons a:nth-child(3) { background: #FF0000 !important; }
+.modern-footer .social-icons a:nth-child(4) { background: #000000 !important; }
+.modern-footer .social-icons a:nth-child(5) { background: linear-gradient(45deg, #405DE6, #E1306C, #FD1D1D) !important; }
+
+.modern-footer .social-icons a:hover {
+    transform: translateY(-2px) !important;
+    filter: brightness(1.1) !important;
+}
+
+.modern-footer .payment-icons {
+    display: flex !important;
+    gap: 10px !important;
+    padding: 15px !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.modern-footer .payment-icons a {
+    width: 35px !important;
+    height: 35px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 6px !important;
+    color: #ffffff !important;
+    transition: all 0.3s ease !important;
+}
+
+.modern-footer .payment-icons a:nth-child(1) { background: #1A1F71 !important; }
+.modern-footer .payment-icons a:nth-child(2) { background: #EB001B !important; }
+.modern-footer .payment-icons a:nth-child(3) { background: #006CB8 !important; }
+.modern-footer .payment-icons a:nth-child(4) { background: #40BA5E !important; }
+.modern-footer .payment-icons a:nth-child(5) { background: #5A31F4 !important; }
+
+.modern-footer .payment-icons a:hover {
+    transform: translateY(-2px) !important;
+    filter: brightness(1.1) !important;
+}
+
+.modern-footer .footer-bottom {
+    margin-top: 40px !important;
+    padding-top: 20px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.modern-footer .footer-bottom p {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 13px !important;
+    margin-bottom: 0 !important;
+}
+
+.modern-footer .footer-bottom a {
+    color: #60a5fa !important;
+    text-decoration: none !important;
+}
+
+.modern-footer .footer-bottom a:hover {
+    color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+    .modern-footer {
+        padding: 40px 0 20px !important;
+    }
+    
+    .modern-footer .footer-heading {
+        margin-bottom: 12px !important;
+    }
+    
+    .modern-footer .social-icons a,
+    .modern-footer .payment-icons a {
+        width: 32px !important;
+        height: 32px !important;
+    }
+    
+    .modern-footer .footer-subscribe {
+        padding: 15px !important;
+    }
+} 

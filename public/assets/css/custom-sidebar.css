@@ -1,0 +1,18 @@
+/* Override default sidebar behavior */
+.pc-sidebar .pc-hasmenu:not(.pc-trigger) > .pc-submenu {
+    display: none !important;
+}
+
+.pc-sidebar .pc-hasmenu.pc-trigger > .pc-submenu {
+    display: block !important;
+}
+
+/* Ensure submenus stay visible when parent is active */
+.pc-sidebar .pc-hasmenu.pc-trigger > .pc-submenu .pc-hasmenu.pc-trigger > .pc-submenu {
+    display: block !important;
+}
+
+/* Rotate arrow when menu is open */
+.pc-sidebar .pc-hasmenu.pc-trigger > .pc-link > .pc-arrow {
+    transform: rotate(90deg) !important;
+} 

@@ -1,0 +1,64 @@
+.social-icons {
+    display: flex !important;
+    gap: 10px !important;
+    margin: 15px 0 !important;
+}
+
+.social-icons a {
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 10px !important;
+    color: #ffffff !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+}
+
+.social-icons a i {
+    font-size: 20px !important;
+}
+
+.social-icons a:nth-child(1) { background: #4267B2 !important; }
+.social-icons a:nth-child(2) { background: #0377cd !important; }
+.social-icons a:nth-child(3) { background: #FF0000 !important; }
+.social-icons a:nth-child(4) { background: #000000 !important; }
+.social-icons a:nth-child(5) { background: linear-gradient(45deg, #405DE6, #E1306C, #FD1D1D) !important; }
+
+.social-icons a:hover {
+    transform: translateY(-2px) !important;
+    filter: brightness(1.1) !important;
+}
+
+.payment-icons {
+    display: flex !important;
+    gap: 10px !important;
+    margin: 15px 0 !important;
+}
+
+.payment-icons a {
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 10px !important;
+    transition: all 0.3s ease !important;
+}
+
+.payment-icons a:nth-child(1) { background: #1A1F71 !important; }
+.payment-icons a:nth-child(2) { background: #EB001B !important; }
+.payment-icons a:nth-child(3) { background: #006CB8 !important; }
+.payment-icons a:nth-child(4) { background: #40BA5E !important; }
+.payment-icons a:nth-child(5) { background: #5A31F4 !important; }
+
+.payment-icons a:hover {
+    transform: translateY(-2px) !important;
+    filter: brightness(1.1) !important;
+}
+
+.payment-icons i {
+    color: #ffffff !important;
+    font-size: 20px !important;
+} 
