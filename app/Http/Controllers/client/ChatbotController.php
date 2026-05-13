@@ -57,14 +57,15 @@ class ChatbotController
         }
 
         // Gọi Gemini API
-        $api_key = "AIzaSyC7bDHaBORo63DHUPL-PiILtmul8YQiOaU";
+        $api_key = env('GEMINI_API_KEY');
         $url = "https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent?key=$api_key";
-        $prompt = "Bạn là nhân viên tư vấn chuyên nghiệp, luôn đặt nhu cầu khách hàng lên hàng đầu. 
-            Khi trả lời, hãy luôn bắt đầu bằng 'Dạ thưa anh/chị,' hoặc 'Dạ vâng, thưa anh/chị,' và trả lời thật lịch sự, chu đáo. 
-            Chỉ trả lời đúng sản phẩm mà khách hàng hỏi, không liệt kê các sản phẩm khác. 
-            Khi liệt kê sản phẩm, hãy sử dụng định dạng danh sách HTML <ul><li></li></ul> (không dùng dấu sao *). 
-            Mỗi sản phẩm phải tạo liên kết có dạng: 
-            <a href=\"http://127.0.0.1:8000/product/{slug}\" target=\"_blank\">{tên sản phẩm}</a>.
+        $app_url = rtrim(env('APP_URL', 'http://localhost'), '/');
+        $prompt = "Bạn là nhân viên tư vấn chuyên nghiệp, luôn đặt nhu cầu khách hàng lên hàng đầu.
+            Khi trả lời, hãy luôn bắt đầu bằng 'Dạ thưa anh/chị,' hoặc 'Dạ vâng, thưa anh/chị,' và trả lời thật lịch sự, chu đáo.
+            Chỉ trả lời đúng sản phẩm mà khách hàng hỏi, không liệt kê các sản phẩm khác.
+            Khi liệt kê sản phẩm, hãy sử dụng định dạng danh sách HTML <ul><li></li></ul> (không dùng dấu sao *).
+            Mỗi sản phẩm phải tạo liên kết có dạng:
+            <a href=\"$app_url/product/{slug}\" target=\"_blank\">{tên sản phẩm}</a>.
             Khi nào khách hàng muốn nhắn tin trực tiếp với admin, hãy cung cấp liên kết chat trực tiếp với admin như sau còn không thì không hiện:
             <a href=\"/chat\" target=\"_blank\">Nhấn vào đây để chat trực tiếp với admin</a>.
             Dữ liệu:

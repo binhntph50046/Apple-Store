@@ -59,7 +59,7 @@ return [
     |-------------------------------------
     */
     'user_avatar' => [
-        'folder' => 'http://127.0.0.1:8000',
+        'folder' => env('APP_URL', 'http://localhost'),
         'default' => 'avatar.png',
     ],
 
