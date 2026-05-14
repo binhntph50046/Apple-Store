@@ -182,22 +182,6 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin|staff'])
     Route::post('order-returns/{id}/reject', [AdminOrderReturnController::class, 'reject'])->name('order-returns.reject');
 });
 
-// Route cho khách gửi yêu cầu hoàn hàng
-Route::middleware(['auth'])->group(function () {
-    Route::get('order/{order}/return', [ClientOrderReturnController::class, 'create'])->name('order.returns.create');
-    Route::post('order/{order}/return', [ClientOrderReturnController::class, 'store'])->name('order.returns.store');
-});
-
-// Theo dõi đơn hàng sau khi đặt hàng
-Route::get('/order', [ClientOrderController::class, 'index'])->name('order.index');
-Route::post('/order/cancel/{order}', [ClientOrderController::class, 'cancel'])->name('order.cancel');
-Route::get('/order/tracking/{order}', [CheckoutController::class, 'tracking'])->name('order.tracking');
-Route::get('/order/invoice/{order}', [CheckoutController::class, 'invoice'])->name('order.invoice');
-Route::get('/order/resend-invoice/{order}', [CheckoutController::class, 'resendInvoice'])->name('order.resend-invoice');
-
-Route::prefix('order')->name('order.')->group(function () {
-    Route::post('{id}/request-resend-invoice', [ClientOrderController::class, 'requestResendInvoice'])->name('request-resend-invoice');
-});
 
 // Chatify Messenger Client
 Route::get('/chat', [ChatController::class, 'index'])->name('client.chat');
