@@ -347,7 +347,7 @@
             </ul>
         </div>
         <!-- Search -->
-        <form class="flex-grow-1 mx-3 search-form" action="{{ route('search') }}" method="get">
+        <form class="flex-grow-1 mx-3 search-form" action="{{ route('product.search') }}" method="get">
             <div class="search-input-wrapper" style="position:relative;">
                 <input type="text" name="q" class="form-control search-input" style="height: 46px"
                     placeholder="Bạn đang tìm sản phẩm, tin tức, workshop..." value="{{ request('q') }}">

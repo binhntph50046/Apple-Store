@@ -533,5 +533,5 @@ Route::prefix('admin/profile')->name('admin.profile.')->middleware(['auth', 'rol
     Route::put('/password', [AdminProfileController::class, 'updatePassword'])->name('update-password');
 });
 
-Route::get('/tim-kiem', [SearchController::class, 'index'])->name('search');
+Route::get('/tim-kiem', [SearchController::class, 'index'])->name('product.search');
 Route::get('/api/search-suggestions', [SearchController::class, 'suggestions'])->name('search.suggestions');
