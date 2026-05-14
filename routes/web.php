@@ -134,7 +134,6 @@ Route::get('/cart/checkout', [CheckoutController::class, 'cartCheckout'])->name(
 Route::post('/cart/checkout', [CheckoutController::class, 'processCartCheckout'])->name('cart.checkout.store');
 Route::post('/cart/checkout/vnpay', [PaymentController::class, 'cartVnPay'])->name('cart.checkout.vnpay');
 
-Route::match(['get', 'post'], '/checkout', [CheckoutController::class, 'index'])->name('checkout');
 Route::post('/checkout', [CheckoutController::class, 'store'])->name('checkout.store');
 Route::get('/checkout/vnpay/callback', [CheckoutController::class, 'vnpayCallback'])->name('checkout.vnpay.callback');
 
