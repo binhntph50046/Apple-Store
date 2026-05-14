@@ -15,7 +15,6 @@ RUN apt-get update && apt-get install -y \
     ffmpeg \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install \
-        pdo \
         pdo_mysql \
         mbstring \
         exif \
@@ -24,9 +23,6 @@ RUN apt-get update && apt-get install -y \
         gd \
         intl \
         zip \
-        xml \
-        tokenizer \
-        fileinfo \
     && pecl install redis \
     && docker-php-ext-enable redis \
     && apt-get clean \
