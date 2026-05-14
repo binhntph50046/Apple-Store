@@ -42,6 +42,8 @@ WORKDIR /var/www
 
 COPY . .
 
+RUN mkdir -p database && touch database/database.sqlite
+
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 
 RUN npm ci && npm run build
