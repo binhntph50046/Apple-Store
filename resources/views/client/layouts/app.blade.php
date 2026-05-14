@@ -32,8 +32,6 @@
     @yield('styles')
 </head>
 
-<script src="http://localhost:5173/widget.js" data-widget-key="sk-live-f5e5cc0e6bf28becf7c88815577fe7e8ab1332111854dac0"
-    defer crossorigin></script>
 
 <body>
     @include('client.partials.header')

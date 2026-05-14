@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Pagination\Paginator;
 // use Illuminate\Support\ServiceProvider;
 use App\Models\Category;
+use Illuminate\Support\Facades\URL;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
@@ -29,6 +30,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        if (app()->environment('production')) {
+            URL::forceScheme('https');
+        }
+
         Carbon::setLocale('vi');
         Paginator::useBootstrapFive();
         // Share categories for menu - kiểm tra bảng tồn tại trước khi truy vấn
