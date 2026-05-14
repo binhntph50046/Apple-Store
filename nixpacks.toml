@@ -25,7 +25,7 @@ nixPkgs = [
 
 [phases.install]
 cmds = [
-  "composer install --no-dev --optimize-autoloader --no-interaction",
+  "COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --optimize-autoloader --no-interaction",
   "npm ci"
 ]
 
