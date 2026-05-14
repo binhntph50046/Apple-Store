@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\admin;
 
 use Chatify\Http\Controllers\ChatifyMessengerController as BaseController;
 use Illuminate\Http\Request;
