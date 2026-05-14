@@ -48,7 +48,10 @@ RUN composer install --no-dev --optimize-autoloader --no-interaction
 
 RUN npm ci && npm run build
 
-CMD php artisan migrate --force && \
+RUN mkdir -p storage/framework/views storage/framework/cache storage/framework/sessions bootstrap/cache
+
+CMD mkdir -p storage/framework/views storage/framework/cache storage/framework/sessions bootstrap/cache && \
+    php artisan migrate --force && \
     php artisan config:cache && \
     php artisan route:cache && \
     php artisan view:cache && \
