@@ -1,4 +1,4 @@
-<script src="https://js.pusher.com/8.4.0/pusher.min.js"></script>
+import Pusher from 'pusher-js';
 
     // Enable Pusher logging - chỉ bật khi debug
     Pusher.logToConsole = true;
