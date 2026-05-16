@@ -191,6 +191,7 @@
     <script 
       src="https://a20-app-162.vercel.app/widget.js" 
       data-widget-key="sk-live-76a71f7d2d4007bbb4159216cbc10d970f6a56857b838ca4"
+      data-api-url="https://a20-app-162-production.up.railway.app"
       defer
       crossorigin
     ></script>
