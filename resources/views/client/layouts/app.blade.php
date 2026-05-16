@@ -162,7 +162,7 @@
                 })
             })
             .then(res => res.json())
-            .then data => {
+            .then(data => {
                 // Lưu id bản ghi lại để dùng khi thoát
                 localStorage.setItem("page_view_id", data.id);
             });
@@ -186,53 +186,14 @@
             localStorage.removeItem("page_view_id");
         });
     </script>
-</body>
 
-</html>
-});
-</script>
-
-@yield('scripts')
-
-<script>
-    const pageUrl = window.location.href;
-
-    // Gửi khi vào trang
-    fetch("/track/start", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]').content
-            },
-            body: JSON.stringify({
-                url: pageUrl
-            })
-        })
-        .then(res => res.json())
-        .then data => {
-            // Lưu id bản ghi lại để dùng khi thoát
-            localStorage.setItem("page_view_id", data.id);
-        });
-
-    // Gửi khi rời trang
-    window.addEventListener("pagehide", function() {
-        const id = localStorage.getItem("page_view_id");
-        if (!id) return;
-
-        fetch("/track/stop", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]').content
-            },
-            body: JSON.stringify({
-                id: id
-            })
-        });
-
-        localStorage.removeItem("page_view_id");
-    });
-</script>
+    <!-- AI Semantic Search Widget -->
+    <script 
+      src="https://a20-app-162.vercel.app/widget.js" 
+      data-widget-key="sk-live-76a71f7d2d4007bbb4159216cbc10d970f6a56857b838ca4"
+      defer
+      crossorigin
+    ></script>
 </body>
 
 </html>
